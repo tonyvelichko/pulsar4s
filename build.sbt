@@ -26,12 +26,12 @@ val ScalatestVersion = "3.2.3"
 val Slf4jVersion = "1.7.30"
 val SprayJsonVersion = "1.3.6"
 val Java8CompatVersion = "0.9.1"
-val ZIOVersion = "1.0.3"
+val ZIOVersion = "1.0.4-2"
 val ZIOInteropCatsVersion = "2.1.4.1"
 
 lazy val commonScalaVersionSettings = Seq(
   scalaVersion := ScalaVersion,
-  crossScalaVersions := Seq("2.12.10", "2.13.3")
+  crossScalaVersions := Seq("2.12.10", "2.13.5")
 )
 
 lazy val warnUnusedImport = Seq(
@@ -187,8 +187,8 @@ lazy val scalaz = Project("pulsar4s-scalaz", file("pulsar4s-scalaz"))
   .settings(name := "pulsar4s-scalaz")
   .settings(allSettings)
   .settings(libraryDependencies ++= Seq(
-    "org.scalaz" %% "scalaz-core" % "7.2.30",
-    "org.scalaz" %% "scalaz-concurrent" % "7.2.30"
+    "org.scalaz" %% "scalaz-core" % "7.2.31",
+    "org.scalaz" %% "scalaz-concurrent" % "7.2.31"
   ))
 
 lazy val monix = Project("pulsar4s-monix", file("pulsar4s-monix"))
